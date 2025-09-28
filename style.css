@@ -7,8 +7,12 @@ h1,h2{
 h3,h4{
     font-weight: 600 !important;
 }
-h5,h6{
+h5{
     font-weight: 500 !important;
+}
+h6{
+    font-weight: 700;
+    font-size: 500;
 }
 .btn{
     font-family: 'jost',sans-serif;
@@ -140,7 +144,10 @@ h5,h6{
     justify-content: space-between;
     z-index: 1;
 }
-.team-carousel .owl-nav .owl-prev .team-carousel .owl-nav .owl-next .related-carousel .owl-nav .owl-prev .related-carousel .owl-nav .owl-next{
+ .team-carousel .owl-nav .owl-prev,
+ .team-carousel .owl-nav .owl-next,
+ .related-carousel .owl-nav .owl-prev,
+ .related-carousel .owl-nav .owl-next{
     position: relative;
     width: 60px;
     align-items: center;
@@ -151,7 +158,10 @@ h5,h6{
     font-size: 23px;
     transition: 5.5s;
 }
-.team-carousel .owl-nav .owl-prev:hover .team-carousel .owl-nav .owl-next:hover .related-carousel .owl-nav .owl-prev:hover .related-carousel .owl-nav .owl-next:hover{
+.team-carousel .owl-nav .owl-prev:hover,
+.team-carousel .owl-nav .owl-next:hover,
+.related-carousel .owl-nav .owl-prev:hover,
+.related-carousel .owl-nav .owl-next:hover{
   background-color: #FFFFFF;  
 }
 .testimonial-carousel .owl-item img{
