@@ -2,27 +2,84 @@
     --blue: #007bff;
     --indigo: #6610f2;
 }
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.15;
+}
 body{
     background-color: #ffffff;
     margin: 0;
     font-family: Open sans-serif;
     font-size:400;
+    line-height: 1.5;
+    color: #6b6a75;
+    text-align: left;
+    background-color: #ffffff;
+}
+hr{
+    box-sizing:content-box;
+    height: 0;
+    overflow: visible;
 }
 h1,h2{
     font-weight:800;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
 
 }
 h3,h4{
     font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
 
 }
 h6{
     font-size: 500;
     font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
 }
 h5{
     font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
 }
+p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+ol,
+ul,
+dl{
+     margin-top: 0;
+    margin-bottom: 1rem;
+
+}
+ol ol,
+ul ul,
+ol ul,
+ul ol{
+    margin-bottom: 0;
+}
+strong{
+    font-weight: bolder;
+}
+small{
+    font-size: 80%;
+}
+a:hover{
+    color: #1154b6;
+    text-decoration: underline;
+}
+img{
+    vertical-align:middle;
+    border-style: none;
+
+}
+table{
+    border-collapse: collapse;
+}
+
 .btn-square{
     height: 36px;
     width: 36px;
@@ -36,3 +93,143 @@ h5{
     width:29px;
     height: 29px;
 }
+.btn-lg-square{
+    width:46px;
+    height: 46px;
+}
+.btn-square,.btn-lg-square,.btn-sm-square{
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+.btn-icon{
+    display: flex;
+    height: 78px;
+    align-items: center;
+    width: 78px;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.back-to-top{
+    position: fixed;
+    right: 30px;
+    display: none;
+    z-index: 11;
+    bottom: 30px;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: black;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    padding: 30px;
+    padding: 15px;
+    font-size: 18px;
+    outline: none;
+
+}
+.navbar-light .nav-link:hover ,.navbar-nav .navbar-light .nav-link.active .navbar-nav{
+    color: black;
+}
+@media(max-width: 991px){
+    .navbar-light .navbar-nav .nav-link{
+        padding: 10px;
+        padding: 15px;
+    }
+}
+.jumbotron{
+    background: linear-gradient(rgba(40, 120, 235, 0.9));
+    background-size: cover;
+}
+.jumbotron.page-header{
+    background: linear-gradient(rgba(40, 120, 235, 0.9));
+    background-size: cover;
+}
+.overlay-top:before{
+    top: 0;
+}
+.overlay-bottom::after{
+    bottom: 0;
+    background-size: contain;
+}
+.bg-image{
+    background-attachment: fixed;
+}
+.section-title h6::before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 0;
+    border-top: 2px dashed;
+    width: 100;
+}
+.courses-item img{
+    transition: 6s;
+    position: relative;
+    margin-top: 40px;
+}
+.courses-list-item img{
+    position: relative;
+    transition: 5s;
+}
+.courses-list-item .courses-text .courses-item .courses-text{
+    left: 0;
+    right: 0;
+    top: 0;
+    align-items: center;
+    position: relative;
+    width: 100;
+    height: calc(100+86px);
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 1;
+    transition: 4s;
+}
+.courses-list-item .courses-text{
+    height: 100%;
+}
+.courses-item:hover img{
+    margin-top: 0px;
+}
+.courses-list-item:hover img{
+    transform: scale(1,2);
+
+}
+.courses-item:hover .courses-text{
+    height: calc(100%+40px);
+}
+.team-carousel .owl-nav 
+.related-carousel .owl-nav{
+    left: 0;
+    position: absolute;
+    width: 100%;
+    top:calc(50%-30px);
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    z-index: 1.5;
+}
+.team-carousel .owl-nav .owl-prev,
+.team-carousel .owl-nav .owl-next,
+.related-carousel .owl-nav .owl-prev,
+.related-carousel .owl-nav .owl-next{
+    position: relative;
+    align-items: center;
+    font-size: 25px;
+    background: white;
+    color: #ffffff;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    transition: 5s;
+}
+.team-carousel .owl-nav .owl-prev:hover,
+.team-carousel .owl-nav .owl-next:hover,
+.related-carousel .owl-nav .owl-prev:hover,
+.related-carousel .owl-nav .owl-next:hover{
+    background-color: #ffffff;
+}
+
+
