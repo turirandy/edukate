@@ -1,0 +1,38 @@
+:root{
+    --blue: #007bff;
+    --indigo: #6610f2;
+}
+body{
+    background-color: #ffffff;
+    margin: 0;
+    font-family: Open sans-serif;
+    font-size:400;
+}
+h1,h2{
+    font-weight:800;
+
+}
+h3,h4{
+    font-weight: 700;
+
+}
+h6{
+    font-size: 500;
+    font-weight: 300;
+}
+h5{
+    font-weight: 600;
+}
+.btn-square{
+    height: 36px;
+    width: 36px;
+
+}
+.btn{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.btn-sm-square{
+    width:29px;
+    height: 29px;
+}
