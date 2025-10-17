@@ -2,23 +2,23 @@
     "use strict"
 
 //Dropdown on mouse hover
-$(document).ready(function(){
     function toggleNavbarMethod(){
-        if($(window).width()>992){
-            $('.navbar.drodown').on('mouseover',function(){
-                $('.droddown-toggle',this).trigger('click');
-            }).on('mouseout',function(){$('.dropdown-toggle',this).trigger('click').blur();
+        if($(window).width() > 992){
+            $('.navbar.dropown').on('mouseover',function(){
+                $('.dropdown-toggle',this).trigger('click');
+            }).on('mouseout',function(){
+                $('.dropdown-toggle',this).trigger('click').blur();
 
             });
         }else{
-            $('navbar.dropdown').off('mouseover').off('mouseout');
+            $('.navbar.dropdown').off('mouseover').off('mouseout');
         }
     }
     toggleNavbarMethod();
     $(window).resize(toggleNavbarMethod);
 });
 
-//Back to the  top button
+//Back to the top button
 $(window).scroll(function(){
         if($(this).scrollTop()>100){
             $('.back-to-top').fadeIn('slow');
@@ -58,7 +58,7 @@ $(window).scroll(function(){
     });
 
     //Team carousel
-    $("team-carousel").owlCarousel({
+    $(".team-carousel").owlCarousel({
         autoplay:true,
         smartSpeed:1000,
         margin:30,
@@ -82,4 +82,35 @@ $(window).scroll(function(){
         }
     });
 
-})(jQuery);
+(jQuery);
+// Newsletter form
+ const newsletterForm = document.querySelector(".newsletter-form");
+    if (newsletterForm) {
+        newsletterForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            setTimeout(() => {
+                 // Scroll or redirect to top (home)
+                window.location.hash = "", // scrolls to top of page
+                // Alternatively: window.location.href ="index.html";
+                newsletterForm.reset();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            }, 500);
+        })};
+
+
+// Join form
+    const joinForm = document.getElementById("joinForm");
+    if (joinForm) {
+        joinForm.addEventListener("submit", function (event) {
+            event.preventDefault(); // prevent default form submission
+            // Simulate save
+            setTimeout(() => {
+                // Scroll or redirect to top (home)
+                window.location.hash = "", // scrolls to top of page
+                // Alternatively: window.location.href ="index.html";
+                 joinForm.reset();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            }, 500);
+        });
+    }          

@@ -238,5 +238,39 @@ table{
 .related-carousel .owl-nav .owl-next:hover{
     background-color: #ffffff;
 }
+footer{
+    background-color: aliceblue;
+}
+.join-section{
+    background-color: var(--primary);
+    padding: 5rem 0;
+}
+.join-container{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.join-content{
+    flex: 1;
+}
+.join-form{
+    flex: 1;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
 
+footer a:hover {
+    color: #ffffff !important;
+}
+
+footer .form-control {
+    height: 45px;
+    padding: 10px 15px;
+}
 

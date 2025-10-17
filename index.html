@@ -42,12 +42,13 @@
             <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav mx-auto py-0">
                     <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="course.html" class="nav-item nav-link">Courses</a>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="#about" class="nav-item nav-link">About</a>
+                    <a href="#features" class="nav-item nav-link">Features</a>
+                    <a href="#team" class="nav-item nav-link">Meet our Team</a>
+                    <a href="#contact" class="nav-item nav-link">Contact Us</a>
                 </div>
                 </div>
-                <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Now!</a>
+                <a href="#join" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Now!</a>
             </div>
         </nav>
       </div>
@@ -56,26 +57,25 @@
       <!--Header Start-->
       <div class="jumbotron jumbotron-fluid page-header position-relative overlay-bottom" style="margin-bottom:90px;">
         <div class="container text-center py-5">
-            <h1 class="text-white display-1">Features</h1>
+            <h1 class="text-white display-1">EDUKATE</h1>
             <div class="d-inline-flex text-white mb-5">
-                <p class="m-0 text uppercase"><a class="text-white" href="">Home</a></p>
                 <i class="fa fa-angle-right pt-1 px-3"></i>
-                <p class="m-0 text-uppercase">Features</p>
             </div>
             <div class="mx-auto mb-5" style="width: 100%; max-width: 600px;">
                 <div class="input-group">
                     <div class="input-group-prepend">
-                        <button class="btn btn-outline-light bg-white text-body px-4 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Course 1</a>
-                            <a class="dropdown-item" href="#">Course 2</a>
-                            <a class="dropdown-item" href="#">Course 3</a>
-                            <a class="dropdown-item" href="#">Course 4</a>
-                        </div>
+                        <button class="btn btn-outline-light bg-white text-body px-4 " type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</button>
+                        <select id="courses" class="input-group-prepend">
+                            <option value=""></option>
+                            <option value="#html">Html courses</option>
+                            <option value="">Css courses</option>
+                            <option value="">Java Script courses</option>
+                            <option value="">Python courses </option>
+                            <option value="">Web design courses</option>
+                        </select>
                     </div>
-                    <input type="text" class="form-control border-light" style="padding:30px 25px" placeholder="Keyword">
                     <div class="input-group-append">
-                        <button class="btn btn-secondary px-4 px-lg-5">Search</button>
+                        <button type="button" class="btn btn-secondary px-4 px-lg-5"><a href="search.html">Search</a></button>
                     </div>
                 </div>
             </div>
@@ -83,13 +83,14 @@
     </div>
     <!--Header Start-->
 
-    <!--About  Start-->
+    <!--About Start-->
+    <section id="about">
     <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-5 mb-5 mb-lg-0"  Style="min-height :500px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/about.jpg" style="object-fit:cover;" alt=>
+                        <img class="position-absolute w-100 h-100" src="https://i.pinimg.com/736x/51/af/3d/51af3de02c1a92172c41f99fffb902b6.jpg" style="object-fit:cover;" alt=>
                         </div>
                     </div>
                     <div class="col-lg-7">
@@ -99,39 +100,50 @@
                         </div>
                         <p>At Edukate, we belive education should be accessible to everyone,eveywhere.</p>
                         <p>Our mission is to empower learners through high-quality online courses taught by experienced instuctors.</p>
-                        <div class="Row pt-3 mx-0">
-                            <div class="col-3 px-0">
-                                <div class="bg-success text-center p-4">
-                                    <h1 class="text-white" data-toggle="counter-up"></h1>
-                                    <h6 class="text-uppercase text-white"><span class="d-block"></span></h6>
-                                </div>
+           <div class="container-fluid py-5">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-7 mb-5 mb-lg-0">
+                        <div class="section-title position-absolute mb-4">
+                            <h2 class="d-inline-block position-relative text-secondary text-uppercase pb-2"></h2>
+                        </div>
+                        <p class="mb-4 pb-3"></p>
+                        <div class="d-flex mb-3">
+                            <div class="btn-icon bg-primary mr-4">
+                                <i class="fa fa-2x fa-graduation-cap text-white"></i>
                             </div>
-                            <div class="col-4 px-0">
-                                <div class="bg-primary text-center p-4">
-                                    <h1 class="text-white"  data-toggle="counter-up"></h1>
-                                    <h6 class="text-uppercase text-white"><span class="d-block"></span></h6>
-                                </div>
+                            <div class="mt-n2">
+                                <h4>Fee Structure</h4>
+                                <p>Free Online Courses</p>
                             </div>
-                            <div class="col-3 px-0">
-                                <div class="bg-secondary text center p-4">
-                                    <h1 class="text-white" data-toggle="counter-up" ></h1>
-                                    <h6 class="text-uppercase text-white"><span class="d-block"></span></h6>
-                                </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="btn-icon bg-secondary mr-4">
+                                <i class="fa fa-2x fa-certificate text-white"></i>
                             </div>
-                            <div class="col-3 px-0">
-                                <div class="bg-warning text-center p-4">
-                                    <h1 class="text-white" data-toggle="counter-up"></h1>
-                                    <h6 class="text-uppercase  text-white"><span class="d-block"></span></h6>
-                                </div>
+                            <div class="mt-n1">
+                                <h4>Location</h4>
+                                <p>Virtual</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="btn-icon bg-warning mr-4">
+                                <i class="fa fa-2x fa-book-reader text-white"></i>
+                            </div>
+                            <div class="mt-n1">
+                                <h4>Learning Hours</h4>
+                                <p>Flexible</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+  </section>
         <!-- About End-->
     
     <!-- Feature Start  -->
+    <section id="features">
          <div class="container-fluid py-5">
             <div class="container py-5">
                 <div class="row">
@@ -163,6 +175,11 @@
                                 <i class="fa fa-2x fa-book-reader text-white"></i>
                             </div>
                             <div class="mt-n1">
+                                <h4>Flexible Online Classes</h4>
+                                <p>Study at your own pace,from device, anywhere</p>
+                            </div>
+                        </div>
+                        <div class="mt-n1">
                                 <h2 class="d-inline-block position-relative text-secondary text-uppercase pb-2"></h2>
                             <p>We help studtents learn how to code with passion and love</p>
                             <p>Its All For FREEEE!!!!!</p>
@@ -170,27 +187,16 @@
                         </div>
                             </div>
                         </div>
-                        <div class="d-flex">
-                            <div class="btn-icon bg-warning mr-4">
-                                <i class="fa fa-2x fa-book-reader text-white"></i>
-                            </div>
-                            <div class="mt-n1">
-                                <h4>Flexible Online Classes</h4>
-                                <p>Study at your own pace,from device, anywhere</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5"  style="min-height: 500px;">
-                        <div class="position-relative h-100">
-                            <img class="position-absolute w-100 h-100" src="img/feature.jpg" style="object-fit: cover;">
-                        </div>    
                     </div>
                 </div>
             </div>
          </div>
+    </section>
+         
     <!--Feature end-->
 
             <!--Team Start-->
+            <section id="team">
             <div class="container-fluid py-5">
                 <div class="container py-5">
                     <div class="section-title text-center position-relative mb-5">
@@ -258,7 +264,7 @@
                             <img class="img-fluid w-100" src="img/team-6.jpg" alt="">
                             <div class="bg-light text-center p-4">
                                 <h5 class="mb-3">Quincy Jilo</h5>
-                                <p class="mb-3">Web and Design Developer</p>
+                                <p class="mb-3">Python</p>
                                 <div class="d-flex justify-content-center">
                                     <a class="mx-1 p-1" href="#"><i class="fab fa-twitter"></i></a>
                                     <a class="mx-1 p-1" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -285,8 +291,80 @@
                     </div>
                 </div>
             </div>
+            </section>
             <!--Team  End-->
+    <!--Join us Start-->
+    <section id="join">
+            <div class="container-fluid py-5">
+                <div class="container py-5">
+                </div>
+            </div>
+            <div class="join-form">
+                    <h3>Sign Up</h3>
+                    <form id="joinForm">
+                        <div class="form-group">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" id="fullName" class="form-input"required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="location" class="form-label">Location</label>
+                            <input type="text" id="location" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="experience" class="form-label">How expireinced are you with coding</label>
+                            <select id="experience" class="form-input">
+                                <option value="begginner">I'm new to coding</option>
+                                <option value="intermediate">I'm not that new to coding</option>
+                                <option value="pro">I know how to code</option>
+                                <option value="advanced">I am experinced in coding and I can make websites</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Courses(Choose the ones you want to do)</label>
+                            <div style="display: flex;flex-wrap: wrap;gap: 1rem;margin-top: 0.5rem;">
+                                <label style="display: flex;align-items: center;gap: 0.5em;">
+                                    <input type="checkbox" name="course" value="webDesign">
+                                    <span>Web and desgin development</span>
+                                </label>
+                                <label style="display: flex;align-items:center;gap: 0.5rem;">
+                                    <input type="checkbox" name="course" value="Js">
+                                    <span>Js</span>
+                                </label>
+                                 <label style="display: flex;align-items:center;gap: 0.5rem;">
+                                    <input type="checkbox" name="course" value="Css">
+                                    <span>Css</span>
+                                </label>
+                                 <label style="display: flex;align-items:center;gap: 0.5rem;">
+                                    <input type="checkbox" name="course" value="Html">
+                                    <span>Html</span>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 50%;">Sign up</button>
+                    </form>
+          </section>                            
+
+           <div class="col-md-6 mb-5">
+                    <h3 class="text-black mb-4">NewsLetter</h3>
+                    <p>Subcribe For updates</p>
+                    <div class="w-100">
+                            <div class="input-group">
+                                <form class="newsletter-form">
+                                    <input type="email" class="form-control border-dark" style="padding: 30pxx;" placeholder="Your Emaill Address" required>
+                                    <div class="input-group-append">
+                                    <button type="submit" class="btn btn-primary px-4">Sign Up</button>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
     <!--Contact Start-->
+    <section id="contact">
             <div class="container-fluid py-5">
                 <div class="container py-5">
                     <div class="row align-items-center">
@@ -298,7 +376,7 @@
                                     </div>
                                     <div class="mt-n1">
                                         <h4>Our Locations</h4>
-                                        <p class="m-0">123 Street, Abc, Earth</p>
+                                        <p class="m-0">Online</p>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center mb-5">
@@ -323,71 +401,27 @@
                         </div>
                         <div class="col-lg-7">
                             <div class="section-title position-relative mb-4">
-                                <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Get Help</h6>
+                                <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2"></h6>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>    
+            </div>
+        </section>      
     <!--Contact End-->   
 
 
          
     <!--FOoter Start-->
+    <footer>
     <div class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5" style="margin-top: 90px;">
         <div class="container mt-5 pt-5">
             <div class="row">
-                <div class="col-md-6 mb-5">
-                    <a href="index.html" class="navbar-brand">
-                        <h1 class="mt-n2 text-uppercase text-white"><i class="fa-book-reader mr-3"></i></h1>
-                    </a>
-                    <p class="m-0">.</p>
-                </div>
-                <div class="col-md-6 mb-5">
-                    <h3 class="text-white mb-4">NewsLetter</h3>
-                    <div class="w-100">
-                        <div class="input-group">
-                            <input type="text" class="form-control border-light" style="padding: 30pxx;" placeholder="Your Emaill Address">
-                            <div class="input-group">
-                                <input type="text" class="form-control border-light" style="padding: 30px;">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary px-4">Sign Up</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                            <div class="col-md-4 mb-5">
-                                <h3 class="text-white mb-4">Get In Touch</h3>
-                                <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street,  Abc,  Earth</p>
-                                <p><i class="fa fa-phone-alt mr-2"></i>+0712 345 ***</p>
-                                <p><i class="fa fa-envelope mr-2"></i>hell0@edukate.com</p>
-                                <div class="d-flex justify-content-start mt-4">
-                                    <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-twitter"></i></a>
-                                    <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-facebook-f"></i></a>
-                                    <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-linkedin-in"></i></a>
-                                    <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-5">
-                                <h3 class="text-white mb-4">Our Courses</h3>
-                                <div class="d-flex flex-column justify-content-start">
-                                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Web Design</a>
-                                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>App Design</a>
-                                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Marketing</a>
-                                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Research</a>
-                                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>SEO</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-5">
-                                <h3 class="text-white mb-4">Quick Links</h3>
-                                <div class="d-flex flex-column justify-content-start">
-                                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Privacy Policy</a>
-                                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms & Conditions</a>
-                                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>FAQz</a>
-                                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Help & Support</a>
-                                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Contact</a>
+                <div class="col-md-4 mb-5">
+                    <h3 class="text-white mb-4">Quick Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="private.html"><i class="fa fa-angle-right mr-2"></i>Privacy Policy</a>
+                    <a class="text-white-50" href="#contact"><i class="fa fa-angle-right mr-2"></i>Contact</a>
                                 </div>
                             </div>
                         </div>
@@ -406,6 +440,7 @@
                         </div>
                     </div>
                 </div>
+         </footer>
     <!--Footer End-->
 
      <!-- Back to Top-->
